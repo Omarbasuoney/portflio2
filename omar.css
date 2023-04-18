@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    
+}
+
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color:#323946;
+    --text-bg-color:#fff;
+    --main-color:#0ef;
+
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-bg-color);
+}
+
+
+.header{
+    top: 0;
+    left: 0;
+    display: flex;
+    background: transparent;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    padding: 20px 10% ;
+    justify-content: space-between;
+    align-items: center;
+    background: #081b29;
+}
+
+.logo{
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #ededed;
+}
+
+.navbar a{
+    font-size: 18px;
+    color:#ededed ;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.Active{
+    color: #00abf1;
+}
+
+.home{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 0 10%;
+    background: url(images/233.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.home-content h3{
+    color: #00abf1;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.home-content p{
+    font-size: 16px;
+    margin: 30px 0 40px;
+    line-height: 1.2;
+}
+
+.home .home-content .btn-box{
+    width: 345px;
+    height: 50px;
+    justify-content: space-between;
+    display: flex;
+    background: transparent;
+}
+
+.home-content .btn-box a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf1;
+    border: 2px solid #00abf1;
+    border-radius: 8px;
+    font-size:19px ;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    transition: .3s;
+}
+
+
+
+.home-content .btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf1;
+}
+
+.home-content .btn-box a:hover{
+    background: transparent;
+    color:#ededed;
+    box-shadow: 0 0 20px #00abf1;
+    transition: .5s;
+}
+
+.home-content .btn-box .icon1:hover{
+    background: #00abf1;
+    color: #ededed;
+    box-shadow: 0 0 20px #00abf1;
+    transition: .5s;
+
+}
+
+.home-content .home-ic{
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+    width: 170px;
+    justify-content: space-between;
+}
+
+.home-content .home-ic a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf1;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #00abf1;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-content .home-ic a:hover{
+    color: #081b29;
+}
+
+.home-ic a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    background: #00abf1;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home-ic a:hover::before{
+    width: 100%;
+}
+
+.heading span{
+    color: #00abf1;
+    font-weight: 800;
+}
+
+.home-imghover{
+    position:absolute ;
+    top: 0;
+    right:30px ;
+    width:500px;
+    height:100% ;
+    background: transparent;
+    transition: 3s;
+    
+}
+
+.home-imghover:hover{
+    background: #081b29;
+    opacity: .8;
+}
+
+.About .about-img img{
+    max-width: 700px;
+}
+
+.btn{
+    display: inline-block;
+    background: #00abf1;
+    padding: 12px 28px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #00abf1;
+    text-decoration: none;
+    font-size: 16px;
+    color: #1f242d;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.About{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 800px;
+
+    background: var(--second-bg-color);
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    
+}
+
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+    font-weight: 900;
+}
+
+.about-content h3{
+    font-size: 1.8rem;
+}
+
+.about-content p{
+    font-size: 1.3rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.services h2{
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    
+    
+
+    
+}
+
+
+.services-container .services-box{
+  height: 400px;
+  width: 370px;
+  padding: 20px 35px;
+  background: var(--second-bg-color);
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 50px;
+  transition: .5s ease;
+  
+
+
+}
+
+.services-container .services-box:hover{
+    border-color: #fff;
+    transform: scale(1.02)
+    
+}
+
+.services-box i{
+    font-size: 7rem;
+    color: #00abf1;
+}
+
+.services-box h3{
+    font-size: 2.3rem;
+}
+
+.services-box p {
+    font-size: 1.3rem;
+    margin: 1rem 0 3rem;
+}
+
+.services .heading span{
+    color: #00abf1;
+}
+
+
+.heading span{
+    color: #00abf1;
+}
+
+.protofilo{
+    color: #232527;
+}
+
+.protofilo h2{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.protofilo h2{
+    color: #fff;
+}
+.protofilo-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.3rem;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+
+}
+
+.protofilo-container .protofilo-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+    border: 1px var(--main-color);
+}
+
+.protofilo-box img{
+    width: 100%;
+    transition: .5s ease;
+}
+
+.protofilo-box img:hover{
+    transform: scale(1.1);
+}
+
+.protofilo-box .protofilo-leyer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.protofilo-box:hover .protofilo-leyer{
+    transform: translateY(0);
+}
+
+.protofilo .protofilo-box h4{
+    color: #fff;
+}
+
+.protofilo .protofilo-box p{
+    color: #fff;
+}
+
+.protofilo-leyer h4{
+    font-size: 2.5rem;
+}
+
+.protofilo-leyer p{
+    font-size: 1.1rem;
+    margin: .3rem 0 1rem;
+}
+
+.protofilo-leyer a{
+    display:inline-flex ;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-bg-color);
+    border-radius: 50%;
+}
+
+
+.protofilo-leyer a i{
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+.contact h2{
+    margin-bottom: 3rem;
+}
+
+.contact form{
+    max-width: 70rem;
+    margin: 1rem auto;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-bg-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input{
+    width: 49%;
+}
+
+.footer{
+    justify-content: space-between;
+    background: var(--second-bg-color);
+    display: flex;
+    align-items: center;
+    padding: 2rem 9%;
+    flex-wrap: wrap;
+}
+
+.footer-text{
+    font-size: 1.6rem;
+}
+
+.footer-icontop a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-icontop a:hover{
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-icontop a i{
+    font-size: 2.4rem;
+    color: var(--second-bg-color);
+}
